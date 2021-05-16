@@ -29,6 +29,11 @@ h1 {
   color: var(--clr-light);
 }
 
+.nav-link {
+    color: var(--clr-light);
+    text-decoration: none;
+}
+
 .jumbotron {
   background-color: var(--clr-accent);
 }
