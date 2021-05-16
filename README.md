@@ -8,4 +8,4 @@
 * Yilin Zhang
 
 ## Starting live stream on Raspberry Pi:
-python3 live-stream.py
+`$ python3 live-stream.py`
