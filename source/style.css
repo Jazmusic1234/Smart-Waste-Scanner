@@ -1,0 +1,34 @@
+/******** Variables ********/
+:root {
+  --clr-light: #ffffff;
+  --clr-accent: #2a8649;
+  --clr-base: #b9d3a4;
+  --clr-dark: #424242;
+  --clr-gray: #a8a8a8;
+
+  --ff-primary: 'Raleway', sans-serif;
+  --ff-secondary: 'Roboto', sans-serif;
+
+  --fs-title: 140px;
+  --fs-pages: 100px;
+  --fs-buttons: 80px;
+
+  --fw-bold: 700;
+  
+}
+
+body {
+  background-color: var(--clr-base);
+}
+
+nav {
+  background-color: var(--clr-accent);
+}
+
+h1 {
+  color: var(--clr-light);
+}
+
+.jumbotron {
+  background-color: var(--clr-accent);
+}
