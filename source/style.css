@@ -7,8 +7,8 @@
   --clr-dark: #424242;
   --clr-gray: #a8a8a8;
 
-  --ff-primary:;
-  --ff-secondary:;
+  /* --ff-primary:;
+  --ff-secondary:; */
 
   --fs-title: 140px;
   --fs-pages: 100px;
@@ -31,9 +31,37 @@ h1 {
   color: var(--clr-light);
 }
 
-.nav-link {
+h2 {
+  margin: 50px;
+}
+
+.navbar .navbar-nav .nav-link {
     color: var(--clr-light);
-    text-decoration: none;
+    font-size: 1.1em;
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--clr-light);
+}
+
+.navbar .navbar-nav .nav-link::after {
+  transition: all 0.5s;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: var(--clr-light);
+  color: transparent;
+  width: 0%;
+  content: '.';
+  height: 3px;
+}
+
+.navbar .navbar-nav .nav-link:hover::after {
+  width: 100%;
 }
 
 .jumbotron {
@@ -49,5 +77,5 @@ h1 {
   width: 170px;
   height: 70px;
   color: var(--clr-light);
-  margin: 50px;
+  margin-top: 200px;
 }
