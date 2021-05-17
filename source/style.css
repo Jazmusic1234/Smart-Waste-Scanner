@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+
 /******** Variables ********/
 :root {
   --clr-light: #ffffff;
@@ -7,12 +9,12 @@
   --clr-dark: #424242;
   --clr-gray: #a8a8a8;
 
-  /* --ff-primary:;
-  --ff-secondary:; */
+  --ff-primary: 'Gamja Flower', cursive;
+  /* --ff-secondary:; */
 
-  --fs-title: 140px;
-  --fs-pages: 100px;
-  --fs-buttons: 80px;
+  --fs-title: 50px;
+  --fs-navlink: 20px;
+  --fs-buttons: 25px;
 
   --fw-bold: 700;
   
@@ -20,15 +22,18 @@
 
 body {
   background-color: var(--clr-base1);
+  font-family: var(--ff-primary);
 }
 
 nav {
   background-color: var(--clr-base2);
   margin: 20px;
+  font-size: var(--fs-navlink);
 }
 
 h1 {
   color: var(--clr-light);
+  font-size: var(--fs-title);
 }
 
 h2 {
@@ -37,6 +42,7 @@ h2 {
 
 .navbar .navbar-nav .nav-link {
     color: var(--clr-light);
+    margin-left: 30px;
 }
 
 .navbar .navbar-nav .active {
@@ -57,4 +63,5 @@ h2 {
   height: 70px;
   color: var(--clr-light);
   margin-top: 200px;
+  font-size: var(--fs-buttons);
 }
