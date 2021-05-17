@@ -1,13 +1,14 @@
 /******** Variables ********/
 :root {
   --clr-light: #ffffff;
-  --clr-accent: #2a8649;
-  --clr-base: #b9d3a4;
+  --clr-base1: #cadcbb;
+  --clr-base2: #2f904f;
+  --clr-accent: #237c23;
   --clr-dark: #424242;
   --clr-gray: #a8a8a8;
 
-  --ff-primary: 'Raleway', sans-serif;
-  --ff-secondary: 'Roboto', sans-serif;
+  --ff-primary:;
+  --ff-secondary:;
 
   --fs-title: 140px;
   --fs-pages: 100px;
@@ -18,11 +19,12 @@
 }
 
 body {
-  background-color: var(--clr-base);
+  background-color: var(--clr-base1);
 }
 
 nav {
-  background-color: var(--clr-accent);
+  background-color: var(--clr-base2);
+  margin: 20px;
 }
 
 h1 {
@@ -35,5 +37,17 @@ h1 {
 }
 
 .jumbotron {
-  background-color: var(--clr-accent);
+  background-color: var(--clr-base2);
+  border-bottom: 5px solid var(--clr-accent);
+  padding-bottom: 0px;
+}
+
+.scan-waste {
+  background-color: var(--clr-base2);
+  border: 4px solid var(--clr-accent);
+  border-radius: 40px;
+  width: 170px;
+  height: 70px;
+  color: var(--clr-light);
+  margin: 50px;
 }
