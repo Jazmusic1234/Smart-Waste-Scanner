@@ -65,3 +65,9 @@ h2 {
   margin-top: 200px;
   font-size: var(--fs-buttons);
 }
+
+img {
+  display: block;
+  margin: auto;
+  margin-bottom: 100px;
+}
