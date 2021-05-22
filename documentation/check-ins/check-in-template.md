@@ -1,13 +1,13 @@
-Check-in
+# Check-in
 
 Date: 
 
-Jasmine
+## Jasmine
 
-Julia
+## Julia
 
-Mihai
+## Mihai
 
-Steven
+## Steven
 
-Yilin
+## Yilin
