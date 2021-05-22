@@ -1,19 +1,17 @@
-# Project Charter (4-5 pages)
+# Project Charter
 
 ### High Level Description
 
 Our project is an interactive teaching tool that uses machine learning and computer vision to detect and classify different types of waste and tell the user where to dispose of them. It will consist of a Raspberry Pi, camera, and tablet.
 
 *****************
-### Project Overview (1/2 page)
-###### *Summarize the project in layperson’s terms (e.g., one that a non-engineer could understand). This should not be more than one paragraph.*
+### Project Overview
 
 The Smart Waste Scanner will have a Raspberry Pi, camera, and a touchscreen. The user will be able to hold up an item to the camera and it will figure out what that item is and whether it should go in the recycling, compost, specialty recycling, or trash and display the correct category on the touchscreen. On the screen, there will also be buttons that the user can click on to learn more information. For example, if the user doesn’t know what composting is they can click on the “What is composting?” button. If they want to learn about how much waste is recycled every year, they can click on the “Recycling Stats” button. There will also be a map on the screen that shows the nearest location that the item can be disposed of. If it’s compost, it will show a map of the community gardens on campus that accept compost. If it’s specialty recycling, the map will show the location of the Sustainability Resource Center.
 
 
 *****************
-### Project Approach (1-2 pages)
-###### *Provide more details about what you will accomplish and how you plan to accomplish it.*
+### Project Approach
 
 There are so many different types of waste which makes it possible for this project to be built upon in the future. But due to the fact that we only have 6 weeks to create a prototype of the project, we will limit the scope of the waste that our scanner will be able to detect to barcodes and basic materials (Glass, Paper, Cardboard, Plastic, Metal, Trash).
 
@@ -24,8 +22,7 @@ The hardware team will get the Raspberry Pi, tablet, and camera connected togeth
 Luckily, due to the nature of this project, we are able to easily work on it remotely. The software does not depend on the hardware to run and be tested. Most of the software development will be done on our laptops since it only needs a camera and a screen, both of which a laptop have. 2 members will work on getting the hardware setup so that when it comes time to show our final product, we just need to open the website on the Raspberry Pi and make sure that it is using the external camera connected to the Raspberry Pi.
 
 *****************
-### Minimum Viable Product (1-2 pages)
-###### *Describe a minimum viable product that demonstrates your project. This should be something that you will achieve with very high probability. It demonstrates the basic functionality and idea and enables feedback. Aim to get an MVP as soon as possible. Then iterate quickly on top of that adding more features as you have time. How will you iterate upon that over the quarter? What are the specific objectives of the project for this quarter? What are the longer term goals?*
+### Minimum Viable Product
 
 Generally, the product shall be able to classify a type of waste when held up to the camera and direct the user to the proper location of which the waste should be disposed of. The overall effect of this is to decrease overall landfill and pollution while also increasing the availability of natural resources.
 
@@ -38,8 +35,7 @@ Our product should start with ensuring the waste is properly identified, which b
 Our goal for the quarter is to create a product that would educate and ensure that waste is placed in the correct category. We plan on achieving this with Smart Waste Scanner, an intelligent touch-screen display with a camera that can identify any type of waste and instruct the user to place it in the correct bin. Goals that can be classified as longer-term would be to implement additional features such as Google Maps to increase the user-experience of our product.
 
 *****************
-### Constraints, Risk, and Feasibility (1/2-1 page)
-###### *What are the potential stumbling blocks? What is realistically feasible here? The quarter goes by very quickly. The better approach is to over-deliver on what you promise, rather than under deliver on a set of unrealistic goals. Be sure to include risks – a list of things that could go wrong and how to avoid them.*
+### Constraints, Risk, and Feasibility
 
 There are a few potential stumbling blocks.  The first is finding a free or inexpensive barcode scanning API.  We’ll need to use an API because the CV implementation from camera images is difficult and certainly not feasible for our time frame.  Additionally, we’ll need to find/build/train a model for waste detection that fits our set of objects we’d like to classify.  We could also potentially have problems running our model on the Raspberry Pi, or finding a lightweight enough model that will work on it.  Finally, connecting all of our components (Raspberry Pi, camera, classifier, interface) could be a challenge.
 

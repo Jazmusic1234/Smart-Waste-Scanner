@@ -1,5 +1,5 @@
-# Group Management (1/2 page)
-* What are the major roles in your group’s management?
+# Group Management
+
   * Documentation
     * Documents code and project progress and organizes Github repo
   * Class assignment management

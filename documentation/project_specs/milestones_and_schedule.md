@@ -1,12 +1,6 @@
-# Project Milestones and Schedule (1-2 pages)
-* Define milestones that clearly define their objective, what it means to complete each milestone, who is responsible, and when you expect to complete them. 
-* Define the milestones at two scales, a high level set of key milestones aka deliverables, and a low level set of weekly milestones that move you towards deliverables.
-* You must be able to demonstrate the completion of each deliverable. For example, take a video of something working, make a graph showing some processed data, or complete a documented github repos. 
-* Prioritize and organize your milestones. Some are necessary, others are useful, some are hopeful if time permits, etc. Gantt charts are helpful to better visualize the milestones and understand their dependencies.
-* Describe your minimal viable product. This should be something that you will achieve with very high probability. It demonstrates the basic functionality and idea and enables feedback. Aim to get an MVP as soon as possible. Then iterate quickly on top of that adding more features as you have time.
-* A good rule of thumb is one milestone per person per week. And one deliverable per person every 2-3 weeks. The general expectation for UCSD classes is 8 hours/week of work outside of lecture. Think about breaking milestones into 8-10 hours of work. Be realistic at the same time, make sure you are driving towards a deliverable. 
+# Project Milestones and Schedule 
 
-![Gantt Chart](Gantt_Chart.png)
+![Gantt Chart](images/Gantt_Chart.png)
 
 ### Milestones
 [Gantt Chart](https://docs.google.com/spreadsheets/d/1hELHBSfVzhgVlQ-FRjqm1UXFKXBpGtuc2WCGuSOQzQU/edit?usp=sharing)
