@@ -1,39 +1,38 @@
 
-
-- Glass
-Instructions:
+Glass
+- Instructions:
 1. Don’t break it
 2. Ensure it's untreated glass (no mirrors, windows, etc)
 3. Color (? check for SD, it matters for some places ...)
 4. Clean it (rinse, make sure there's no food, non-water liquid)
 
-Facts about glass recycling:
+- Facts about glass recycling:
 
 
-Resources: 
+- Resources: 
 https://www.hazardouswasteexperts.com/five-tips-for-recycling-glass/
 https://wwf.panda.org/discover/knowledge_hub/teacher_resources/project_ideas/recycling_glass/
 
 
-- Paper
-Instructions:
+Paper
+- Instructions:
 
-Facts about paper recycling:
+- Facts about paper recycling:
 
-Resources:
+- Resources:
 
-- Cardboard
-Instructions:
+Cardboard
+- Instructions:
 
-Facts about cardboard recycling:
+- Facts about cardboard recycling:
 
-Resources:
+- Resources:
 
-- Plastic
+Plastic
 
-- Metal
+Metal
 
-- Trash/Waste
+Trash/Waste
 
 
 
