@@ -1,5 +1,5 @@
-# Project Development (1/2 page)
-* What are the development roles and who will handle them?
+# Project Development
+
   * Machine learning and Computer Vision
     * Steven
     * Mihai

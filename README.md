@@ -7,7 +7,4 @@
 * Steven Gov
 * Yilin Zhang
 
-## Starting live stream on Raspberry Pi:
-`$ python3 live-stream.py`
-
-## [Website link](https://jazmusic1234.github.io/Smart-Waste-Scanner/source/index.html)
+ [Website link](https://jazmusic1234.github.io/Smart-Waste-Scanner/source/index.html)
