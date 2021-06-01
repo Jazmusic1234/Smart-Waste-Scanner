@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
   </head>
 
   <body>
@@ -19,7 +19,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="scan-page.html">scan</a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="learn-more.html">learn more</a>
               </li>
               <li class="nav-item">
@@ -30,7 +30,9 @@
       </nav>
     </div>
 
-    <h2 class="text-center">Tap to learn more about each kind of waste!</h2>
-
+    <div class="text-center">
+      <button type="button" class="scan-waste">Scan Waste</button>
+    </div>
+    
   </body>
 </html>
