@@ -9,7 +9,11 @@ import time
 import io
 import threading
 import picamera
-
+import picamera.array
+import cv2
+from basic import scanning
+import numpy as np
+from PIL import Image
 
 class Camera(object):
     thread = None  # background thread that reads frames from camera
@@ -59,3 +63,4 @@ class Camera(object):
                 if time.time() - cls.last_access > 10:
                     break
         cls.thread = None
+

@@ -8,7 +8,7 @@ from imutils.video import VideoStream
 import threading
 import datetime
 import time
-from camera_pi import Camera
+from camera_pi2 import Camera
 
 app = Flask(__name__)
 
