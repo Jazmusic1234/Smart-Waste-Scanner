@@ -18,7 +18,6 @@ def index():
 
 @app.route('/scan-page.html')
 def scan():
-
   return render_template('/scan-page.html')
 
 def gen(camera):
@@ -28,8 +27,18 @@ def gen(camera):
     yield (b'--frame\r\n'
             b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
-@app.route('/video_feed')
-def video_feed():
+@app.route('/video_feed_scan')
+# def video_feed_scan():
+#   return Response(gen(Camera("scan")),
+#                     mimetype='multipart/x-mixed-replace; boundary=frame')
+
+@app.route('/classification.html')
+def classification():
+  return render_template('/classification.html')
+
+
+@app.route('/video_feed_class')
+def video_feed_class():
   return Response(gen(Camera()),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
