@@ -20,14 +20,13 @@ import os
 
 img = ""
 typeOfSort = ""
+prediction = ""
 
 class Camera(object):
     thread = None  # background thread that reads frames from camera
     frame = None  # current frame is stored here by background thread
     last_access = 0  # time of last client access to the camera
-    global img
-    # global typeOfSort
-    # typeOfSort = typeOfSort
+    global img, prediction
 
     def initialize(self):
         if Camera.thread is None:
@@ -43,6 +42,9 @@ class Camera(object):
         Camera.last_access = time.time()
         self.initialize()
         return self.frame
+
+    def get_prediction(self):
+        return prediction
 
     @classmethod
     def _thread(cls):
@@ -70,13 +72,10 @@ class Camera(object):
 
                 stream.seek(0)
                 
-            # if(typeOfSort == "scan"):
                 img = scanning(image)
-            # elif(typeOfSort == "classification"):
-                prediction = predict(stream)
+                prediction = predict(image)
 
                 is_success, buffer = cv2.imencode(".png", img)
-                # stream = io.BytesIO(buffer)
                 cls.frame = io.BytesIO(buffer).read()
 
                 # reset stream for next frame

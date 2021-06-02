@@ -19,9 +19,6 @@
               <li class="nav-item active">
                 <a class="nav-link" href="scan-page.html">scan</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="classification.html">classification</a>
-              </li>
               <li class="nav-item">
                 <a class="nav-link" href="learn-more.html">learn more</a>
               </li>
@@ -33,9 +30,9 @@
       </nav>
     </div>
 
-    <h2 class="text-center">[Waste Category]</h2>
+    <h2 class="text-center">{{ category }}</h2>
 
-    <img src="{{ url_for('video_feed_scan') }}" class="rounded mx-auto d-block" alt="livestream">
+    <img src="{{ url_for('video_feed') }}" class="rounded mx-auto d-block" alt="livestream">
     <!-- <img src="http://192.168.1.50:8000/stream.mjpg">  -->
   
     <footer>
