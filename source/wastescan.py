@@ -65,15 +65,17 @@ output = StreamingOutput()
 def predict(img):
     # Create base64 encoded string
     # with open(img, "rb") as f:
-    image_string = base64.b64encode(img).decode("utf-8")
-
+    global prediction
+    image_string = base64.b64encode(img.getvalue()).decode("utf-8")
+        
     # Get response from POST request
     response = requests.post(
-        url="http://192.168.1.116:38101/v1/predict/16271817-d9ce-4de8-86b7-e608784a1fbd",
+        url="http://192.168.1.127:38101/v1/predict/c4c761fa-2662-4d55-8d6a-4923145e46c7",
         json={"image": image_string},
     )
     data = response.json()
-
+    results = data["predictions"][0]
+    prediction = results["label"]
     return data
 
 

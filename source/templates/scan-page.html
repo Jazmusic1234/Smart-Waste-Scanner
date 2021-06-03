@@ -8,6 +8,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+    <meta http-equiv="refresh" content="7" />
   </head>
 
   <body>
@@ -30,7 +31,9 @@
       </nav>
     </div>
 
-    <h2 class="text-center">{{ category }}</h2>
+    {% if category %}
+    <h2 class="text-center">Category: {{ category }}</h2>
+    {% endif %}
 
     <img src="{{ url_for('video_feed') }}" class="rounded mx-auto d-block" alt="livestream">
     <!-- <img src="http://192.168.1.50:8000/stream.mjpg">  -->

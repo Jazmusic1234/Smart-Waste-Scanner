@@ -19,7 +19,6 @@ from PIL import Image
 import os
 
 img = ""
-typeOfSort = ""
 prediction = ""
 
 class Camera(object):
@@ -63,17 +62,18 @@ class Camera(object):
                 camera.capture(stream, format='png')
                 global img 
                 img = Image.open(stream)
-                
+                # time.sleep(1)
+                predictions = predict(stream)
                 
                 data = np.fromstring(stream.getvalue(), dtype=np.uint8)
                 image = cv2.imdecode(data, 1)
-
-                print(type(image))
-
-                stream.seek(0)
-                
                 img = scanning(image)
-                prediction = predict(image)
+                stream.seek(0)
+
+                global prediction
+                results = predictions["predictions"][0]
+                prediction = results["label"]
+                print(prediction)
 
                 is_success, buffer = cv2.imencode(".png", img)
                 cls.frame = io.BytesIO(buffer).read()
