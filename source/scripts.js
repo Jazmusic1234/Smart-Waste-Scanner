@@ -8,15 +8,30 @@ function revealModal(category) {
     let modal = document.querySelector('.modal');
     if(category == 'glass') {
       document.getElementById('learn_more_title').innerHTML = "Glass";
+      
+      // Add content here
+      document.getElementById('content').innerHTML = "This is the glass category";
+
     } else if(category == 'paper') {
       document.getElementById('learn_more_title').innerHTML = "Paper";
+      
+      // Add content here
+      document.getElementById('content').innerHTML = "This is the glass category";
+
     } else if(category == 'plastic') {
       document.getElementById('learn_more_title').innerHTML = "Plastic";
+     
+      // Add content here
+      document.getElementById('content').innerHTML = "This is the glass category";
+
     } else if(category == 'aluminum') {
       document.getElementById('learn_more_title').innerHTML = "Aluminum";
+      
+      // Add content here
+      document.getElementById('content').innerHTML = "This is the glass category";
+
     }
     modal.style.display = 'block';
-    // modal.style.visibility = 'visible';
 }
 
 /**
@@ -27,7 +42,6 @@ function revealModal(category) {
 function hideModal() {
     let modal = document.querySelector('.modal');
     modal.style.display = 'none';
-    // modal.style.visibility = 'hidden';
 }
 
 // export functions for testing

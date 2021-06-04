@@ -50,6 +50,9 @@
           <div class='modal-content'>
             <span id='close_modal'>&times;</span>
             <h3 id='learn_more_title'>Glass</h3>
+            <p id="content"></p>
+            
+            <!-- Add more <p></p> here as needed and then go the scripts.js to change the actual content depending on the category -->
 
           </div>
       </div>
@@ -59,22 +62,6 @@
     <script type='module' src='./scripts.js'></script>
     <script type="module">
       import { revealModal, hideModal } from './scripts.js';
-      // document.getElementById("glassButton").addEventListener('click', function() {
-      //   document.getElementById('learn_more_title').innerHTML = "Glass";
-      //   document.getElementById('learn_more_modal').style.visibility = 'visible';
-      // });
-      // document.getElementById("paperButton").addEventListener('click', function() {
-      //   document.getElementById('learn_more_title').innerHTML = "Paper";
-      //   document.getElementById('learn_more_modal').style.visibility = 'visible';
-      // });
-      // document.getElementById("plasticButton").addEventListener('click', function() {
-      //   document.getElementById('learn_more_title').innerHTML = "Plastic";
-      //   document.getElementById('learn_more_modal').style.visibility = 'visible';
-      // });
-      // document.getElementById("aluminumButton").addEventListener('click', function() {
-      //   document.getElementById('learn_more_title').innerHTML = "Aluminum";
-      //   document.getElementById('learn_more_modal').style.visibility = 'visible';
-      // });
       document.getElementById("glassButton").addEventListener('click', function() {revealModal('glass');});
       document.getElementById("paperButton").addEventListener('click', function() {revealModal('paper');});
       document.getElementById("plasticButton").addEventListener('click', function() {revealModal('plastic');});
