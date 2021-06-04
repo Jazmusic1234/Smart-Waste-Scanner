@@ -6,15 +6,18 @@
   --clr-base1: #cadcbb;
   --clr-base2: #2f904f;
   --clr-accent: #237c23;
+  --clr-card: #62ad62;
   --clr-dark: #424242;
   --clr-gray: #a8a8a8;
 
   --ff-primary: 'Gamja Flower', cursive;
-  /* --ff-secondary:; */
+  --ff-secondary: 'Arial', sans-serif;
 
   --fs-title: 50px;
   --fs-navlink: 20px;
   --fs-buttons: 25px;
+  --fs-name: 35px;
+  --fs-card: 25px;
 
   --fw-bold: 700;
   
@@ -38,6 +41,32 @@ h1 {
 
 h2 {
   margin: 50px;
+}
+
+hr {
+  background-color:var(--clr-light);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.person-card {
+  float: left;
+  padding: 25px; /* if you want space between the images */
+  margin: 25px;
+  background-color: var(--clr-card);
+  box-shadow: 10px 10px #424242;
+  color: var(--clr-light);
+  border-radius: 10px;
+}
+
+.person-card h3 {
+  font-size: var(--fs-name);
+}
+
+.person-card p {
+  font-size: var(--fs-card);
 }
 
 .navbar .navbar-nav .nav-link {
