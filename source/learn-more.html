@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <title>Smart Waste Scanner</title>
     <meta charset="UTF-8">
@@ -31,6 +31,55 @@
     </div>
 
     <h2 class="text-center">Tap to learn more about each kind of waste!</h2>
+    
+    <div class="container text-center" id="learn-more-container">
+      <button type="button" class="waste-category" id="glassButton">
+        <img id="glass" src="" alt="glass"/>
+      </button>
+      <button type="button" class="waste-category" id="paperButton">
+        <img id="paper" src="" alt="paper"/>
+      </button>
+      <button type="button" class="waste-category" id="plasticButton">
+        <img id="plastic" src="" alt="plastic"/>
+      </button>
+      <button type="button" class="waste-category" id="aluminumButton">
+        <img id="aluminum" src="" alt="aluminum"/>
+      </button>
 
+      <div id='learn_more_modal' class='modal'>
+          <div class='modal-content'>
+            <span id='close_modal'>&times;</span>
+            <h3 id='learn_more_title'>Glass</h3>
+
+          </div>
+      </div>
+    </div>
+
+    <!-- JS files -->
+    <script type='module' src='./scripts.js'></script>
+    <script type="module">
+      import { revealModal, hideModal } from './scripts.js';
+      // document.getElementById("glassButton").addEventListener('click', function() {
+      //   document.getElementById('learn_more_title').innerHTML = "Glass";
+      //   document.getElementById('learn_more_modal').style.visibility = 'visible';
+      // });
+      // document.getElementById("paperButton").addEventListener('click', function() {
+      //   document.getElementById('learn_more_title').innerHTML = "Paper";
+      //   document.getElementById('learn_more_modal').style.visibility = 'visible';
+      // });
+      // document.getElementById("plasticButton").addEventListener('click', function() {
+      //   document.getElementById('learn_more_title').innerHTML = "Plastic";
+      //   document.getElementById('learn_more_modal').style.visibility = 'visible';
+      // });
+      // document.getElementById("aluminumButton").addEventListener('click', function() {
+      //   document.getElementById('learn_more_title').innerHTML = "Aluminum";
+      //   document.getElementById('learn_more_modal').style.visibility = 'visible';
+      // });
+      document.getElementById("glassButton").addEventListener('click', function() {revealModal('glass');});
+      document.getElementById("paperButton").addEventListener('click', function() {revealModal('paper');});
+      document.getElementById("plasticButton").addEventListener('click', function() {revealModal('plastic');});
+      document.getElementById("aluminumButton").addEventListener('click', function() {revealModal('aluminum');});
+      document.getElementById('close_modal').addEventListener('click', hideModal);
+    </script>
   </body>
 </html>
