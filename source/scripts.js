@@ -10,25 +10,25 @@ function revealModal(category) {
       document.getElementById('learn_more_title').innerHTML = "Glass";
       
       // Add content here
-      document.getElementById('content').innerHTML = "This is the glass category";
+     document.getElementById('content').innerHTML = "";
 
     } else if(category == 'paper') {
       document.getElementById('learn_more_title').innerHTML = "Paper";
       
       // Add content here
-      document.getElementById('content').innerHTML = "This is the glass category";
+      document.getElementById('content').innerHTML = "";
 
     } else if(category == 'plastic') {
       document.getElementById('learn_more_title').innerHTML = "Plastic";
      
       // Add content here
-      document.getElementById('content').innerHTML = "This is the glass category";
+      document.getElementById('content').innerHTML = "";
 
     } else if(category == 'aluminum') {
       document.getElementById('learn_more_title').innerHTML = "Aluminum";
       
       // Add content here
-      document.getElementById('content').innerHTML = "This is the glass category";
+      document.getElementById('content').innerHTML = "";
 
     }
     modal.style.display = 'block';
