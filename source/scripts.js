@@ -4,13 +4,15 @@
  * @description Opens the help modal when the help button is clicked
  */
 function revealModal(category) {
-    console.log('here')
-    let modal = document.querySelector('.modal');
+    let modal = document.getElementById("learn_more_modal");
     if(category == 'glass') {
-      document.getElementById('learn_more_title').innerHTML = "Glass";
+      document.getElementById("content").innerHTML = "<h3>Glass</h3><p>This is glass</p>";
       
-      // Add content here
-      document.getElementById('content').innerHTML = "This is the glass category";
+      // document.getElementById('learn_more_title').innerHTML = "Glass";
+      
+      // // Add content here
+      // document.getElementById('content').innerHTML = "This is the glass category";
+      // document.getElementById('more_content').innerHTML = "Be careful with glass!";
 
     } else if(category == 'paper') {
       document.getElementById('learn_more_title').innerHTML = "Paper";
@@ -40,7 +42,7 @@ function revealModal(category) {
  * @description Closes the help modal when the 'x' inside the modal or anywhere outside of the modal is clicked
  */
 function hideModal() {
-    let modal = document.querySelector('.modal');
+    let modal = document.getElementById("learn_more_modal");
     modal.style.display = 'none';
 }
 

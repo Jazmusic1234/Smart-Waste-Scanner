@@ -51,6 +51,10 @@ hr {
   box-sizing: border-box;
 }
 
+p {
+  color: var(--clr-light);
+}
+
 .person-card {
   float: left;
   padding: 25px; /* if you want space between the images */
@@ -138,7 +142,7 @@ button.waste-category {
   overflow-y: auto;
 }
 
-.modal-content > h3 {
+#content > h3 {
     font-size: var(--fs-name);
     color: var(--clr-light);
 }
