@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+
+/******** Variables ********/
+:root {
+  --clr-light: #ffffff;
+  --clr-base1: #cadcbb;
+  --clr-base2: #2f904f;
+  --clr-accent: #237c23;
+  --clr-dark: #424242;
+  --clr-gray: #a8a8a8;
+
+  --ff-primary: 'Gamja Flower', cursive;
+  /* --ff-secondary:; */
+
+  --fs-title: 50px;
+  --fs-navlink: 20px;
+  --fs-buttons: 25px;
+
+  --fw-bold: 700;
+  
+}
+
+body {
+  background-color: var(--clr-base1);
+  font-family: var(--ff-primary);
+}
+
+nav {
+  background-color: var(--clr-base2);
+  margin: 20px;
+  font-size: var(--fs-navlink);
+}
+
+h1 {
+  color: var(--clr-light);
+  font-size: var(--fs-title);
+}
+
+h2 {
+  margin: 50px;
+}
+
+footer {
+  height: 100px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--clr-light);
+    margin-left: 30px;
+}
+
+.navbar .navbar-nav .active {
+  text-decoration: underline;
+}
+
+.jumbotron {
+  background-color: var(--clr-base2);
+  border-bottom: 5px solid var(--clr-accent);
+  padding-bottom: 0px;
+}
+
+.scan-waste {
+  background-color: var(--clr-base2);
+  border: 4px solid var(--clr-accent);
+  border-radius: 40px;
+  width: 170px;
+  height: 70px;
+  color: var(--clr-light);
+  margin-top: 200px;
+  font-size: var(--fs-buttons);
+}
