@@ -107,15 +107,15 @@ img {
 
 /******** Learn More ********/
 button.waste-category { 
-  width: 200px;
-  height: 400px;
-  margin: 10px;
+  width: 150px;
+  height: 500px;
+  margin: 5px;
+  background-color:var(--clr-base1);
   font-family: var(--ff-primary);
   font-size: var(--fs-name);
-  border-radius: 10px;
   border: none;
-  box-shadow: 2px 3px 2px 2px var(--clr-dark);
 }
+
 
 .modal {
   display: none;
@@ -130,13 +130,13 @@ button.waste-category {
 }
 
 .modal-content {
-  background-color: var(--clr-dark);
+  background-color: var(--clr-card);
   font-size: var(--fs-card);
-  text-align: center;
+  text-align: left;
   padding: 20px;
   margin: auto;
-  border: var(--clr-dark) 10px solid;
-  border-radius: 15px;
+  border: var(--clr-gray) 10px solid;
+  border-radius: 10px;
   height: 70%;
   width: 80%;
   overflow-y: auto;
@@ -145,6 +145,10 @@ button.waste-category {
 #content > h3 {
     font-size: var(--fs-name);
     color: var(--clr-light);
+}
+.modal-content > h4 {
+  font-size: var(--fs-card);
+  color: var(--clr-light);
 }
 
 #close_modal {
