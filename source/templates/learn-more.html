@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <title>Smart Waste Scanner</title>
     <meta charset="UTF-8">
@@ -31,6 +31,40 @@
     </div>
 
     <h2 class="text-center">Tap to learn more about each kind of waste!</h2>
+    
+    <div class="container text-center" id="learn-more-container">
+      <button type="button" class="waste-category" id="glassButton">
+        <img id="glass" src="glassf.png" alt="glass" height="100%"/>
+      </button>
+      <button type="button" class="waste-category" id="paperButton">
+        <img id="paper" src="paperf.png" alt="paper" height="100%"/>
+      </button>
+      <button type="button" class="waste-category" id="plasticButton">
+        <img id="plastic" src="plasticf.png" alt="plastic" height="100%" >
+      </button>
+      <button type="button" class="waste-category" id="aluminumButton">
+        <img id="aluminum" src="metalf.png" alt="aluminum" height="100%"/>
+      </button>
 
+      <div id='learn_more_modal' class='modal'>
+          <div class='modal-content'>
+            <span id='close_modal'>&times;</span>
+            <div id="content">
+            
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- JS files -->
+    <script type='module' src='./scripts.js'></script>
+    <script type="module">
+      import { revealModal, hideModal } from './scripts.js';
+      document.getElementById("glassButton").addEventListener('click', function() {revealModal('glass');});
+      document.getElementById("paperButton").addEventListener('click', function() {revealModal('paper');});
+      document.getElementById("plasticButton").addEventListener('click', function() {revealModal('plastic');});
+      document.getElementById("aluminumButton").addEventListener('click', function() {revealModal('aluminum');});
+      document.getElementById('close_modal').addEventListener('click', hideModal);
+    </script>
   </body>
 </html>
