@@ -55,24 +55,6 @@ p {
   color: var(--clr-light);
 }
 
-.person-card {
-  float: left;
-  padding: 25px; /* if you want space between the images */
-  margin: 25px;
-  background-color: var(--clr-card);
-  box-shadow: 10px 10px #424242;
-  color: var(--clr-light);
-  border-radius: 10px;
-}
-
-.person-card h3 {
-  font-size: var(--fs-name);
-}
-
-.person-card p {
-  font-size: var(--fs-card);
-}
-
 .navbar .navbar-nav .nav-link {
     color: var(--clr-light);
     margin-left: 30px;
@@ -99,6 +81,17 @@ p {
   font-size: var(--fs-buttons);
 }
 
+
+/******** Scan Page ********/
+#category {
+  font-size: var(--fs-name);
+}
+#tor {
+  margin: 10px;
+  color: black;
+  font-size: var(--fs-name);
+}
+
 img {
   display: block;
   margin: auto;
@@ -115,7 +108,6 @@ button.waste-category {
   font-size: var(--fs-name);
   border: none;
 }
-
 
 .modal {
   display: none;
@@ -155,4 +147,23 @@ button.waste-category {
   float: left;
   font-size: 50px;
   color: var(--clr-light);
+}
+
+/******** About ********/
+.person-card {
+  float: left;
+  padding: 25px; /* if you want space between the images */
+  margin: 25px;
+  background-color: var(--clr-card);
+  box-shadow: 10px 10px #424242;
+  color: var(--clr-light);
+  border-radius: 10px;
+}
+
+.person-card h3 {
+  font-size: var(--fs-name);
+}
+
+.person-card p {
+  font-size: var(--fs-card);
 }
